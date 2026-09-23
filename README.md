@@ -4,19 +4,19 @@ A backend API for a peer mentorship platform that allows users to register as me
 
 ## Phase 1 — Core Backend & Mentorship Management
 
-Phase 1 focuses on building the core backend functionality required for the mentorship platform.
+Phase 1 focuses on building the core backend functionality required for the peer mentorship platform.
 
 ### Phase 1 Features
 
 - User registration and login
 - JWT-based authentication
-- Role-based authorization for mentors and mentees
+- Role-based authorization
 - Mentor profile management
 - Mentor discovery and search
 - Mentor availability management
 - Appointment booking and management
 - Appointment conflict prevention
-- Swagger API documentation
+- Swagger/OpenAPI API documentation
 
 ## Tech Stack
 
@@ -31,11 +31,12 @@ Phase 1 focuses on building the core backend functionality required for the ment
 | bcrypt | Password hashing |
 | Swagger / OpenAPI | API documentation |
 | Vitest | Testing |
+| Postman | API testing |
 
 ## Project Structure
 
 ```text
-peer-mentorship-platform-api/
+peer_mentoship/
 │
 ├── src/
 │   ├── config/
@@ -63,6 +64,8 @@ peer-mentorship-platform-api/
 │   │   ├── mentor.routes.ts
 │   │   └── appointment.routes.ts
 │   │
+│   ├── types/
+│   │
 │   ├── utils/
 │   │   ├── jwt.ts
 │   │   └── AppError.ts
@@ -73,8 +76,11 @@ peer-mentorship-platform-api/
 ├── tests/
 │   └── jwt.test.ts
 │
+├── postman/
+│
 ├── .env.example
 ├── .gitignore
 ├── package.json
+├── package-lock.json
 ├── tsconfig.json
 └── README.md
